@@ -43,5 +43,4 @@ opt = Adam()
 model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
 
 model.fit(X_train, Y_train, batch_size=32, epochs=20)
-
 score = model.evaluate(X_test, Y_test, batch_size=32)
